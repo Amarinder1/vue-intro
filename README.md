@@ -1,6 +1,6 @@
 # vue-intro
 
-####In order to use Vue.js, I put <script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>, my html file. This is also just for development mode. Other options for installing Vue.js and how to get production mode can be found at https://vuejs.org/v2/guide/installation.html
+####In order to use Vue.js, I put <script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>, in my html file. This is also just for development mode. Other options for installing Vue.js and how to get production mode can be found at https://vuejs.org/v2/guide/installation.html
 
 I chose to research Vue.js because it is a front-end framework. I first learned of Vue.js in the lesson plan.
 
