@@ -1,0 +1,51 @@
+<!-- ID name and EL name need to be the same for corerct output to render!!!!!!!  -->
+<!-- Showing how to render a variable  -->
+<!-- Data and DOM are now linked. Can open console in brower, and set app.message to a new value. The webpage will render the new value -->
+<div id="app">
+  <h1>{{ message }}<h1>
+</div>
+
+<!-- Showing how to render string interpolation  -->
+<div id="app-2">
+  <span v-bind:title="message">
+    Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+  </span>
+</div>
+
+<!-- Combining rendering variables and functions -->
+<div id="app-3">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+
+<!-- renders a string and a textbox
+can change the string by typing in the textbox  -->
+<div id="app-4">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>
+
+<!-- renders a toggle button and a string
+when you press the button, will hide the string
+press it again, will show the message-->
+<!-- the message is created in the html file rather than the js file  -->
+<div id="demo">
+  <br/>
+  <button v-on:click="show = !show">
+    Toggle
+  </button>
+  <transition name="fade">
+    <p v-if="show">hello</p>
+  </transition>
+</div>
+
+<!--Used this script to import Vue.js
+Many other ways to do it as well
+This way was the simplest for me -->
+<script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
+
+<!-- Importing the index.js file
+You don't really have to do this
+Can put eveything in index.js in this html file -->
+<script src="index.js"></script>
